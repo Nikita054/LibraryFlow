@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="ru.spring.library.entities.Book" table="Book" schema="dbo" catalog="Library">
+        <id name="bookId">
+            <column name="book_id" sql-type="int"/>
+        </id>
+        <many-to-one name="authorId" class="ru.spring.library.entities.Author" fetch="join" lazy="false">
+            <column name="author_id" not-null="true"/>
+        </many-to-one>
+        <many-to-one name="genreId" class="ru.spring.library.entities.Genre" fetch="join" lazy="false">
+            <column name="genre_id" not-null="true"/>
+        </many-to-one>
+        <many-to-one name="publisherId" class="ru.spring.library.entities.Publisher" fetch="join" lazy="false">
+            <column name="publisher_id" not-null="true"/>
+        </many-to-one>
+        <!--
+        <property name="authorId">
+            <column name="author_id" sql-type="int"/>
+        </property>
+        <property name="genreId">
+            <column name="genre_id" sql-type="int"/>
+        </property>
+        <property name="publisherId">
+            <column name="publisher_id" sql-type="int"/>
+        </property>
+        -->
+        <property name="name">
+            <column name="name" sql-type="nvarchar(50)" length="50"/>
+        </property>
+        <property name="content">
+            <column name="content" sql-type="nvarchar(150)" length="150"/>
+        </property>
+        <property name="pageCount">
+            <column name="pageCount" sql-type="int"/>
+        </property>
+        <property name="isbn">
+            <column name="isbn" sql-type="nvarchar(50)" length="50"/>
+        </property>
+        <property name="pubisherYear">
+            <column name="pubisherYear" sql-type="int"/>
+        </property>
+        <property name="image">
+            <column name="image" sql-type="nvarchar(150)" length="150"/>
+        </property>
+        <property name="desor">
+            <column name="desor" sql-type="nvarchar(50)" length="50"/>
+        </property>
+        <property name="raiting">
+            <column name="raiting" sql-type="int" not-null="true"/>
+        </property>
+        <property name="voteCount">
+            <column name="voteCount" sql-type="int" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

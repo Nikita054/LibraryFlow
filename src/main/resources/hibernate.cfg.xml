@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+
+
+    <property name="dialect">org.hibernate.dialect.SQLServerDialect</property>
+    <property name="hibernate.dialect">
+      org.hibernate.dialect.SQLServerDialect
+    </property>
+    <property name="hibernate.connection.driver_class">net.sourceforge.jtds.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:jtds:sqlserver://localhost:1433/Library;instance=SQLEXPRESS</property>
+
+    <mapping resource="ru.entities/Author.hbm.xml"/>
+    <mapping class="ru.spring.library.entities.Author"/>
+    <mapping resource="ru.entities/Book.hbm.xml"/>
+    <mapping class="ru.spring.library.entities.Book"/>
+    <mapping resource="ru.entities/Genre.hbm.xml"/>
+    <mapping class="ru.spring.library.entities.Genre"/>
+    <mapping resource="ru.entities/Publisher.hbm.xml"/>
+    <mapping class="ru.spring.library.entities.Publisher"/>
+    <mapping resource="ru.entities/User.hbm.xml"/>
+    <mapping class="ru.spring.library.entities.User"/>
+    <!--<property name="hibernate.default_schema"></property>-->
+
+
+  </session-factory>
+</hibernate-configuration>

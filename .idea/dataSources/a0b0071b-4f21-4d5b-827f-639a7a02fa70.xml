@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Library@localhost">
+  <database-model serializer="dbm" rdbms="MSSQL" format-version="4.9">
+    <root id="1">
+      <ServerVersion>11.0.505</ServerVersion>
+      <ServerType>standalone</ServerType>
+    </root>
+    <database id="2" parent="1" name="Library">
+      <ObjectId>6</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Collation>Cyrillic_General_CI_AS</Collation>
+    </database>
+    <database id="3" parent="1" name="MyDB">
+      <ObjectId>5</ObjectId>
+      <Collation>Cyrillic_General_CI_AS</Collation>
+    </database>
+    <database id="4" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+      <Collation>Cyrillic_General_CI_AS</Collation>
+    </database>
+    <database id="5" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+      <Collation>Cyrillic_General_CI_AS</Collation>
+    </database>
+    <database id="6" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+      <Collation>Cyrillic_General_CI_AS</Collation>
+    </database>
+    <database id="7" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+      <Collation>Cyrillic_General_CI_AS</Collation>
+    </database>
+    <schema id="8" parent="2" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2018-08-20.14:47:09.453</IntrospectionTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="9" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="10" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <schema id="12" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="13" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="14" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="15" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="16" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="17" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="18" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="19" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="20" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <table id="21" parent="8" name="Author">
+      <ObjectId>341576255</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:05:14.257</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:33:58.637</ModifiedTimestamp>
+    </table>
+    <table id="22" parent="8" name="Book">
+      <ObjectId>629577281</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:33:58.530</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:33:58.643</ModifiedTimestamp>
+    </table>
+    <table id="23" parent="8" name="Genre">
+      <ObjectId>245575913</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:03:13.923</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:33:58.637</ModifiedTimestamp>
+    </table>
+    <table id="24" parent="8" name="Publisher">
+      <ObjectId>309576141</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:05:13.050</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:33:58.640</ModifiedTimestamp>
+    </table>
+    <table id="25" parent="8" name="User">
+      <ObjectId>277576027</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:03:14.733</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:03:14.743</ModifiedTimestamp>
+    </table>
+    <table id="26" parent="8" name="sysdiagrams">
+      <ObjectId>421576540</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:24:53.353</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:24:53.353</ModifiedTimestamp>
+    </table>
+    <routine id="27" parent="8" name="fn_diagramobjects">
+      <ObjectId>565577053</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:24:53.393</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:24:53.393</ModifiedTimestamp>
+      <RoutineKind>function</RoutineKind>
+      <RoutineType>scalar-fun</RoutineType>
+    </routine>
+    <routine id="28" parent="8" name="sp_alterdiagram">
+      <ObjectId>533576939</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:24:53.383</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:24:53.383</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="29" parent="8" name="sp_creatediagram">
+      <ObjectId>501576825</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:24:53.377</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:24:53.377</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="30" parent="8" name="sp_dropdiagram">
+      <ObjectId>549576996</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:24:53.390</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:24:53.390</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="31" parent="8" name="sp_helpdiagramdefinition">
+      <ObjectId>485576768</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:24:53.370</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:24:53.370</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="32" parent="8" name="sp_helpdiagrams">
+      <ObjectId>469576711</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:24:53.363</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:24:53.363</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="33" parent="8" name="sp_renamediagram">
+      <ObjectId>517576882</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:24:53.380</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:24:53.380</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <routine id="34" parent="8" name="sp_upgraddiagrams">
+      <ObjectId>405576483</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:24:53.350</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:24:53.350</ModifiedTimestamp>
+      <RoutineKind>procedure</RoutineKind>
+      <RoutineType>proc</RoutineType>
+    </routine>
+    <column id="35" parent="21" name="author_id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="21" name="fio">
+      <Position>2</Position>
+      <DataType>nvarchar(90 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="21" name="birthday">
+      <Position>3</Position>
+      <DataType>datetime|0s</DataType>
+    </column>
+    <index id="38" parent="21" name="PK_Author">
+      <Position>1</Position>
+      <ColNames>author_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="39" parent="21" name="PK_Author">
+      <ObjectId>357576312</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:05:14.257</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:05:14.257</ModifiedTimestamp>
+      <ColNames>author_id</ColNames>
+      <UnderlyingIndexName>PK_Author</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="22" name="book_id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="22" name="author_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="42" parent="22" name="genre_id">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="43" parent="22" name="publisher_id">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="44" parent="22" name="name">
+      <Position>5</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="22" name="content">
+      <Position>6</Position>
+      <DataType>nvarchar(150 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="46" parent="22" name="pageCount">
+      <Position>7</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="22" name="isbn">
+      <Position>8</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="22" name="pubisherYear">
+      <Position>9</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="22" name="image">
+      <Position>10</Position>
+      <DataType>nvarchar(150 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="22" name="desor">
+      <Position>11</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="22" name="raiting">
+      <Position>12</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="52" parent="22" name="voteCount">
+      <Position>13</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <index id="53" parent="22" name="PK_Book">
+      <Position>1</Position>
+      <ColNames>book_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="54" parent="22" name="PK_Book">
+      <ObjectId>645577338</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:33:58.630</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:33:58.630</ModifiedTimestamp>
+      <ColNames>book_id</ColNames>
+      <UnderlyingIndexName>PK_Book</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="55" parent="22" name="FK_Book_Author">
+      <ObjectId>677577452</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:33:58.637</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:33:58.637</ModifiedTimestamp>
+      <ColNames>author_id</ColNames>
+      <RefTableId>341576255</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Author</RefTableName>
+      <RefKeyName>PK_Author</RefKeyName>
+      <RefColNames>author_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="56" parent="22" name="FK_Book_Genre">
+      <ObjectId>661577395</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:33:58.637</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:33:58.637</ModifiedTimestamp>
+      <ColNames>genre_id</ColNames>
+      <RefTableId>245575913</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Genre</RefTableName>
+      <RefKeyName>PK_Genre</RefKeyName>
+      <RefColNames>genre_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="57" parent="22" name="FK_Book_Publisher">
+      <ObjectId>693577509</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:33:58.637</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:33:58.637</ModifiedTimestamp>
+      <ColNames>publisher_id</ColNames>
+      <RefTableId>309576141</RefTableId>
+      <RefSchemaName>dbo</RefSchemaName>
+      <RefTableName>Publisher</RefTableName>
+      <RefKeyName>PK_Publisher</RefKeyName>
+      <RefColNames>publisher_id</RefColNames>
+    </foreign-key>
+    <column id="58" parent="23" name="genre_id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="23" name="name">
+      <Position>2</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="60" parent="23" name="PK_Genre">
+      <Position>1</Position>
+      <ColNames>genre_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="61" parent="23" name="PK_Genre">
+      <ObjectId>261575970</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:03:13.940</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:03:13.940</ModifiedTimestamp>
+      <ColNames>genre_id</ColNames>
+      <UnderlyingIndexName>PK_Genre</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="62" parent="24" name="publisher_id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="24" name="name">
+      <Position>2</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="64" parent="24" name="PK_Publisher">
+      <Position>1</Position>
+      <ColNames>publisher_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="65" parent="24" name="PK_Publisher">
+      <ObjectId>325576198</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:05:13.053</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:05:13.053</ModifiedTimestamp>
+      <ColNames>publisher_id</ColNames>
+      <UnderlyingIndexName>PK_Publisher</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="66" parent="25" name="user_id">
+      <Position>1</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="67" parent="25" name="user_name">
+      <Position>2</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="68" parent="25" name="password">
+      <Position>3</Position>
+      <DataType>nvarchar(50 char)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="69" parent="25" name="PK_User">
+      <Position>1</Position>
+      <ColNames>user_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="70" parent="25" name="PK_User">
+      <ObjectId>293576084</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:03:14.737</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:03:14.737</ModifiedTimestamp>
+      <ColNames>user_id</ColNames>
+      <UnderlyingIndexName>PK_User</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="71" parent="26" name="name">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="26" name="principal_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="73" parent="26" name="diagram_id">
+      <Position>3</Position>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DataType>int|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="74" parent="26" name="version">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="75" parent="26" name="definition">
+      <Position>5</Position>
+      <DataType>varbinary(max)|0s</DataType>
+    </column>
+    <index id="76" parent="26" name="PK__sysdiagr__C2B05B618D8FD6AB">
+      <Position>1</Position>
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>diagram_id</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <index id="77" parent="26" name="UK_principal_name">
+      <Position>2</Position>
+      <ColNames>principal_id
+name</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="78" parent="26" name="PK__sysdiagr__C2B05B618D8FD6AB">
+      <ObjectId>437576597</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-08-07.22:24:53.357</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:24:53.357</ModifiedTimestamp>
+      <ColNames>diagram_id</ColNames>
+      <UnderlyingIndexName>PK__sysdiagr__C2B05B618D8FD6AB</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="79" parent="26" name="UK_principal_name">
+      <ObjectId>453576654</ObjectId>
+      <CreatedTimestamp>2018-08-07.22:24:53.357</CreatedTimestamp>
+      <ModifiedTimestamp>2018-08-07.22:24:53.357</ModifiedTimestamp>
+      <ColNames>principal_id
+name</ColNames>
+      <UnderlyingIndexName>UK_principal_name</UnderlyingIndexName>
+    </key>
+    <argument id="80" parent="27">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="81" parent="28" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="82" parent="28" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="83" parent="28" name="@version">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="84" parent="28" name="@definition">
+      <Position>4</Position>
+      <DataType>varbinary(max)|0s</DataType>
+    </argument>
+    <argument id="85" parent="29" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="86" parent="29" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="87" parent="29" name="@version">
+      <Position>3</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="88" parent="29" name="@definition">
+      <Position>4</Position>
+      <DataType>varbinary(max)|0s</DataType>
+    </argument>
+    <argument id="89" parent="30" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="90" parent="30" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="91" parent="31" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="92" parent="31" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="93" parent="32" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="94" parent="32" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="95" parent="33" name="@diagramname">
+      <Position>1</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+    <argument id="96" parent="33" name="@owner_id">
+      <Position>2</Position>
+      <DataType>int|0s</DataType>
+    </argument>
+    <argument id="97" parent="33" name="@new_diagramname">
+      <Position>3</Position>
+      <DataType>sysname|0s</DataType>
+    </argument>
+  </database-model>
+</dataSource>
