@@ -70,8 +70,7 @@ public class BookDaoImlp implements BookDao {
     }
     @Transactional
     public List<Book> getBooks(Genre genre) {
-        books=createBookList(createBookCriteria().add(Restrictions.ilike("genreId.name",genre.getName(),MatchMode.ANYWHERE)));
-        return books;
+        return null;
     }
     @Transactional
     public List<Book> getBooks(Character letter) {
